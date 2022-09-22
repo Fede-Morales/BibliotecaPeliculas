@@ -1,0 +1,15 @@
+body{
+    background-color: darkslategray;
+    margin: 0%;
+    padding: 0%;
+}
+.container_menu{
+    background-color:darkgrey;
+    margin-left: 10px;
+    margin-right: 83%;
+    padding: 15px;
+}
+
+.btn{
+    margin: 2px;
+}
