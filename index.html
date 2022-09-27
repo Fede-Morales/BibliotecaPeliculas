@@ -6,33 +6,52 @@
   <meta name="viewport" content="width=device-width">
   <title>Biblioteca Peliculas</title>
   <link rel="stylesheet" href="index.css">
-  <!-- <link href="style.css" rel="stylesheet" type="text/css" /> -->
 </head>
 
 <body>
   <title>Biblioteca de peliculas</title>
 
-  <h1>Bienvenido</h1>
-  <h4>Ingrese parametro de busqueda</h4>
 
+  <center>
+    <h1 text >Bienvenido</h1>
+  </center>
+  
+
+  <center  class="finder">
+    <h3 >Ingrese parametro de busqueda</h3>
+  </center>
+  <div>
+    <input type="text" id="buscador" placeholder="Nombre, Protagonista, Etc..." class="find_bar">
+    <button type="submit" id="buscar" class="btn">Buscar</button>
+  </div>
+
+
+  
+  <h3>Cargar nueva pelicula</h3>
   <div id="menu" class="container_menu">
-    <form id="seleccion" action="" class="selection_menu">
-      <input type="submit" id="alfabeto" value="Mostrar por orden alfabeto" class="btn"><br>
-      <input type="submit" id="año" value="Ordenar por año" class="btn"><br>
-      <input type="submit" id="calificacion" value="Ordenar por calificacion" class="btn"><br>
-      <label for="buscador">Otro</label><br>
-      <input type="text" id="buscador" placeholder="nombre, director, etc"><br>
+    
+    <form id="newMovie" action="" class="movie_menu">
+      <label for="nombre">Nombre</label><br>
+      <input type=text id="nombre"  class="input"><br>
+
+      <label for="genero">Genero</label><br>
+      <input type=text id="genero" class="input"><br>
+
+      <label for="año">Año</label><br>
+      <input type=text id="año" placeholder="Solo numeros" class="input"><br>
+
+      <label for="director">Director</label><br>
+      <input type=text id="director" class="input"><br>
+
+      <label for="protagonista">Protagonista</label><br>
+      <input type=text id="protagonista" class="input"><br>
+
+      <label for="calificacion">Calificacion</label><br>
+      <input type=text id="calificacion" placeholder="Solo numeros" class="input"><br>
+
+      <button type="submit" id="ingresar">Ingresar</button>
     </form>
   </div>
-
-  <h3>Ingrese pelicula</h3>
-
-  <div id="movie_container" class="container_mloader">
-    <form id="movie_menu" class="movie_menu" action=""></form>
-
-  </div>
-  
-  
 
   
   <script src="peliculas.js"defer></script>
