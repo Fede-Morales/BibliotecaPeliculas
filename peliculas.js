@@ -4,7 +4,6 @@ class Pelicula {
     this.genero = genero;
     this.anio = anio;
     this.director = director;
-    //this.portada = portada;
     this.protagonista = protagonista;
     this.calificacion = calificacion;
     this.id = id;
@@ -109,13 +108,11 @@ const peliculas = [
 ];
 
 
-
-let ingreso = document.getElementById('ingresar')
 const controlAño = document.getElementById('año')
 const controlCalif = document.getElementById('calificacion')
 const buscar = document.getElementById('buscar')
 const controlBusqueda = document.getElementById('buscador')
-
+const datosIngreso = document.getElementById('newMovie')
 
 
 controlCalif.addEventListener('keypress',(e)=>{
@@ -149,16 +146,16 @@ controlBusqueda.addEventListener('keypress',(e)=>{
 })
 
 
-ingreso.addEventListener('click', ()=>{
-  let nombre = document.getElementById('nombre').value;
-  let genero = document.getElementById('genero').value;
-  let anio = document.getElementById('año').value;
-  let director = document.getElementById('director').value
-  let protagonista = document.getElementById('protagonista').value
-  let calificacion = document.getElementById('calificacion').value
+// ingreso.addEventListener('click', ()=>{
+//   let nombre = document.getElementById('nombre').value;
+//   let genero = document.getElementById('genero').value;
+//   let anio = document.getElementById('año').value;
+//   let director = document.getElementById('director').value
+//   let protagonista = document.getElementById('protagonista').value
+//   let calificacion = document.getElementById('calificacion').value
   
-  cargarPelicula(nombre, genero, anio, director, protagonista, calificacion);
-})
+//   cargarPelicula(nombre, genero, anio, director, protagonista, calificacion);
+// })
 
 buscar.addEventListener('click',()=>{
   let busqueda = document.getElementById('buscador').value
@@ -199,6 +196,19 @@ function buscarPelicula(buscar){
   }
   mostrarPelicula(array);
 }
+
+datosIngreso.addEventListener('submit', (e)=>{
+  e.preventDefault();
+  let nombre = e.target.nombre.value
+  let genero = e.target.genero.value
+  let anio = e.target.año.value
+  let director = e.target.director.value
+  let protagonista = e.target.protagonista.value
+  let calificacion = e.target.calificacion.value
+
+  cargarPelicula(nombre, genero, director, anio, protagonista, calificacion)
+  console.log(peliculas)
+})
 
 
 //btnOrdenAlfabetico.addEventListener('click',mostrarPeliculasEnOrden);
