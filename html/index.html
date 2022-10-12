@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Biblioteca Peliculas</title>
+  <link rel="stylesheet" href="../index.css">
+</head>
+
+<body>
+  <title>Biblioteca de peliculas</title>
+
+  <header class="header">
+    <div>
+      <button class="btn__login">Iniciar Sesion</button>
+    </div>
+    <section class="buscador">
+      <div>
+        <label class="text__find" for="buscador">Ingrese parametro de busqueda</label><br>
+        <input type="text" id="buscador" placeholder="Nombre, Protagonista, Etc..." class="find_bar">
+        <button type="submit" id="barraBusqueda" class="btn">Buscar</button>
+      </div>
+      <section>
+        <form action="" class="options">
+          <label for="genero" class="text__find">Genero</label>
+          <select class="select" name="genero" id="genero">
+            <option value="todos">Todos</option>
+            <option value="fantasia">Fantasia</option>
+            <option value="accion">Accion</option>
+            <option value="ciencia ficcion">Ciencia Ficcion</option>
+            <option value="aventuras">Aventuras</option>
+            <option value="comedia">Comedia</option>
+            <option value="comedia dramática">Comedia dramática</option>
+            <option value="drama">Drama</option>
+            <option value="terror">Terror</option>
+          </select>
+          <label for="año" class="text__find">Año</label>
+          <select class="select" name="año" id="año">
+            <option value="todos">Todos</option>
+            <option value="1960">1960-1970</option>
+            <option value="1970">1970-1980</option>
+            <option value="1980">1980-1990</option>
+            <option value="1990">1990-2000</option>
+            <option value="2000">2000-2010</option>
+            <option value="2010">2010-2020</option>
+            <option value="2020">2020-2022</option>
+            <option value="2022">2022+</option>
+          </select>
+          <label for="calificacion" class="text__find">Calificacion</label>
+          <select class="select" name="calificacion" id="calificacion">
+            <option value="todos">Todos</option>
+            <option value="1">1+</option>
+            <option value="2">2+</option>
+            <option value="3">3+</option>
+            <option value="4">4+</option>
+            <option value="5">5+</option>
+            <option value="6">6+</option>
+            <option value="7">7+</option>
+            <option value="8">8+</option>
+            <option value="9">9+</option>
+          </select>
+          <label for="ordenar" class="text__find">Ordenar por</label>
+          <select class="select" name="ordenar" id="ordenar">
+            <option value="todos">Mas recientes</option>
+            <option value="alfabeto">Alfabetico</option>
+            <option value="año">Año</option>
+            <option value="calificacion">Calificacion</option>
+          </select>
+        </form>
+      </section>
+    </section>
+  </header>
+    
+  
+  <div id="lista" class="lista oculto">
+  </div>
+
+  <div id="listaPeliculas" class="lista__peliculas visible">
+  </div>
+
+  
+
+  
+  <script src="../js/index.js"defer></script>
+  
+</body>
+
+</html>

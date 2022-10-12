@@ -1,25 +1,135 @@
 body{
     background-color: darkslategray;
     padding: 0%;
+    margin: 0%;
 }
 .container_menu{
     background-color:darkgrey;
     margin-left: 20px;
-    margin-right: 82%;
+    margin-right: 77%;
     padding: 15px;
 }
 
 .btn{
     width: 100px;
     height: 45px;
+    background-color:darkblue;
+    color: white;
+    border-color:dimgrey;
+}
+
+.buscar{
+    background-color: lightgray;
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.buscador{
+    margin-top: 40px;
+    text-align: center;
+    margin-right: 20%;
+}
+
+.text__find{
+    font-size: x-large;
 }
 
 .find_bar{
-    width: 30%;
+    width: 50%;
     height: 40px;
-    margin-left: 30%;
+    margin-left: 20px;
 }
 
-.finder{
-    margin-top: 60px;
+.card{
+    position: relative;
+    top: 10vh;
+    width: 280px;
+    margin: auto;
+    background-color:hsl(216, 50%, 16%);
+    border-radius: 10px;
+}
+
+.card__tittle{
+   text-align: center;
+   color: aliceblue;
+   font-size:large
+}
+
+.card__description{
+    margin-left: 5px;
+}
+
+.image{
+    border-radius: 5%;
+    width: 260px;
+    height: 280px;
+    margin: 10px;
+}
+
+.separador{
+    margin-left: 33px;
+    width: 220px;
+    height: 1px;
+    background-color: hsl(215, 32%, 27%);
+}
+
+.card__data{
+    display: grid;
+    grid-template-columns: 45% auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    align-items: space-between;
+}
+
+.btn__action{
+    color: green; 
+    width: 100px;
+    margin-left: 70%;
+    margin-bottom: 10px;
+}
+
+.btn__login{
+    margin-top: 10px;
+    width: 100px;
+    height: 45px;
+    background-color:darkblue;
+    color: white;
+    border-color:dimgrey;
+}
+
+.header{
+    display: grid;
+    margin-top:-18px;
+    background-color: brown;
+    height: 200px;
+    grid-template-columns: 10% auto;
+    padding: 15px;
+}
+
+/* .cards__containers{
+    display: grid;
+    grid-template-columns: 35% 35% 35%;
+} */
+
+.atributes{
+    margin-left: 5px;
+    margin-top: 2px;
+    color: aliceblue;
+}
+
+.lista, 
+.lista__peliculas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.oculto{
+    display: none;
+}
+
+.visible{
+    display:flex;
 }
